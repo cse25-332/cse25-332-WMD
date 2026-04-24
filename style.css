@@ -1,3 +1,7 @@
+ul#navlist li{
+display: inline;
+}
+
 :root {
   /* Brand Colors */
   --m-light-blue: #00a3da;
