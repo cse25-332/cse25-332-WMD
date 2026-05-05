@@ -29,7 +29,12 @@ nav a {
 nav a:hover {
   color: white;
 }
-
+h1 {
+  margin-bottom: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   /* Brand Colors */
