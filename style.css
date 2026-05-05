@@ -7,6 +7,53 @@ ul#navlist {
 padding-left: 0;
 margin-left: 0;
 }
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* This makes it fill the screen height */
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the BMW image doesn't look stretched */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2; /* Put this on top of the image */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* Adds a slight tint so text is readable */
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.hero-title {
+  margin-top: auto;   /* Pushes title to the bottom */
+  margin-bottom: 100px; 
+  text-align: center;
+  color: white;
+}
 
 
 ul#navlist li{
