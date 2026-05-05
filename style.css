@@ -40,6 +40,25 @@ body {
   height: 100vh;        /* full screen height */
   object-fit: cover;    /* prevents stretching */
   display: block;
+.hero {
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 16px;
+  opacity: 0.8;
 }
   background-color: var(--carbon-black);
   color: var(--pure-white);
