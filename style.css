@@ -111,3 +111,6 @@ footer{
     color:#aaa;
 }
   
+html{
+    scroll-behavior:smooth;
+}
