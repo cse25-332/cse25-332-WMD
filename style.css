@@ -1,11 +1,113 @@
-ul#navlist {
-padding: 0;
-margin: 0;
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-ul#navlist {
-padding-left: 0;
-margin-left: 0;
+body{
+    font-family:'Poppins', sans-serif;
+    background:#121212;
+    color:white;
+    line-height:1.6;
 }
 
+/* Navigation */
+nav{
+    background:#1e1e1e;
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:#bb86fc;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* Hero Section */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/home.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    color:#cccccc;
+}
+
+/* Sections */
+section{
+    padding:60px 10%;
+}
+
+/* Cards */
+.card{
+    background:#1f1f1f;
+    padding:25px;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Images */
+img{
+    width:100%;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#bb86fc;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#9b5de5;
+}
+
+/* Footer */
+footer{
+    background:#1e1e1e;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#aaa;
+}
   
