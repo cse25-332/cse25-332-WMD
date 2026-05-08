@@ -54,6 +54,16 @@ nav a:hover {
   color: white;
 }
 
+.page-image{
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.page-image:hover{
+  transform: scale(1.05);
+}
+
 /* Hero Section */
 .hero{
     height:80vh;
