@@ -1,108 +1,103 @@
-*{
+/* ==========================================================================
+   1. GLOBAL RESET & THEME STYLES (The Black/White/Purple Look)
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box; /* Prevents padding from breaking your layout width */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212; /* Deep dark gray for the main page background */
+    color: #ffffff;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents accidental sideways scrolling on mobile */
 }
 
-body{
-    font-family: Arial, sans-serif;
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
-/* NAVBAR */
-
-header{
-    position: absolute;
-    width: 100%;
-    z-index: 100;
+p {
+    color: #e5e5e5; /* Slightly off-white for easier reading */
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-top: 0;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 60px;
-}
-
-.logo{
-    color: white;
-    font-size: 30px;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav a:hover{
-    color: gold;
-}
-
-/* HERO SECTION */
-
-.hero{
-    height: 100vh;
-
-    background-image: url("Images/Back.jpg");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+/* ==========================================================================
+   2. HERO CONTAINER & BACKGROUND IMAGE
+   ========================================================================== */
+.hero-container {
     position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes nav to top, text to center/bottom */
 }
 
-.overlay{
+.background-image {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    object-fit: cover;
+    z-index: 1; /* Keeps image safely behind the text */
 }
 
-.hero-content{
+/* ==========================================================================
+   3. NAVIGATION (Centered, Neon Purple, with Hover Effects)
+   ========================================================================== */
+.nav-menu {
     position: relative;
-    text-align: center;
-    color: white;
-
-    max-width: 700px;
-    padding: 20px;
+    z-index: 2; /* Pulls navigation on top of the image */
+    display: flex;
+    flex-wrap: wrap;         /* Allows links to drop to a second row on mobile */
+    justify-content: center; /* Centers the links perfectly */
+    gap: 15px 30px;          /* 15px space between rows, 30px between links */
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #000000; /* Solid black background row just like the screenshot */
 }
 
-.hero-content h2{
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero-content p{
-    font-size: 22px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.btn{
-    display: inline-block;
-    padding: 15px 35px;
-
-    background: gold;
-    color: black;
-
+.nav-menu a {
+    color: #c026d3; /* The exact neon/magenta purple from your screenshot */
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
-
-    transition: 0.3s;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth hover transition */
 }
 
-.btn:hover{
-    background: white;
+/* Make the links glow slightly when hovered over */
+.nav-menu a:hover {
+    color: #e879f9; 
+    text-shadow: 0px 0px 8px rgba(192, 38, 211, 0.6);
+}
+
+/* ==========================================================================
+   4. HERO TEXT CONTENT LAYOUT
+   ========================================================================== */
+.hero-text {
+    position: relative;
+    z-index: 2; /* Pulls text on top of the image */
+    text-align: center;
+    margin: auto; /* Centers the text perfectly within the remaining space */
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Prevents text from stretching too far on desktop screens */
+}
+
+/* Text shadow ensures white text remains readable over bright parts of the image */
+.hero-text h1 {
+    font-size: 2.5rem;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
 }
