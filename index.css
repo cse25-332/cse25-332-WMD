@@ -1,140 +1,108 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background:black;
-    color:white;
-    font-family:Arial, sans-serif;
-    overflow-x:hidden;
+    font-family: Arial, sans-serif;
 }
 
-/* MAIN SECTION */
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    min-height:100vh;
-    padding:40px;
-    gap:40px;
-}
+/* NAVBAR */
 
-/* LEFT IMAGE */
-.left img{
-    width:300px;
-    border-radius:20px;
-}
-
-/* NAVIGATION */
-.middle{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-.middle a{
-    color:#b026ff;
-    text-decoration:none;
-    font-size:28px;
-    font-weight:bold;
-}
-
-/* RIGHT SIDE */
-.right{
-    max-width:500px;
-}
-
-.right h1{
-    font-size:90px;
-    line-height:1;
-    margin-bottom:20px;
-}
-
-.tagline{
-    font-size:30px;
-    margin-bottom:30px;
-}
-
-button{
-    background:#c77dff;
-    border:none;
-    padding:15px 35px;
-    border-radius:15px;
-    font-size:24px;
-    color:white;
-    font-weight:bold;
-    cursor:pointer;
-    margin-bottom:40px;
-}
-
-.description{
-    font-size:24px;
-    line-height:1.7;
-}
-
-/* MOBILE RESPONSIVE */
-@media(max-width:768px){
-
-.hero{
-    flex-direction:column;
-    text-align:center;
-    padding:20px;
-}
-
-.left img{
-    width:220px;
-}
-
-.middle{
-    flex-direction:column;
-    align-items:center;
-}
-
-.middle a{
-    font-size:20px;
-}
-
-.right h1{
-    font-size:60px;
-}
-
-.tagline{
-    font-size:20px;
-}
-
-.description{
-    font-size:18px;
-}
-
-button{
-    font-size:18px;
-}
-/* 1. Ensure the container holding both the image and the menu is the reference point */
-.hero-container {
-    position: relative;
-    width: 100%;
-    min-height: 100vh; /* Adjust height based on your layout needs */
-    overflow: hidden;  /* Keeps the image from spilling out */
-}
-
-/* 2. Force the image to sit in the background */
-.background-image {
+header{
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height: 100vh;
+
+    background-image: url("images/travel.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Keeps the logo from stretching awkwardly */
-    z-index: 1;        /* Pushes it behind the text */
+    background: rgba(0,0,0,0.5);
 }
 
-/* 3. Pull the navigation links and text forward */
-.nav-menu, 
-.hero-text {
+.hero-content{
     position: relative;
-    z-index: 2; /* Higher z-index than the image ensures it sits on top */
+    text-align: center;
+    color: white;
+
+    max-width: 700px;
+    padding: 20px;
 }
 
+.hero-content h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+
+    background: gold;
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: white;
 }
