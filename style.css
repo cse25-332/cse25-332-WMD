@@ -64,33 +64,55 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Hero Section */
-.hero{
-    height:80vh;
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("images/home.jpg");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
+/* HERO SECTION */
 .hero {
-    background-image: url("images/Head.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 45%;
-}
-.hero-content h1{
-    font-size:60px;
-    margin-bottom:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: black;
+    padding: 40px;
+    gap: 30px;
 }
 
-.hero-content p{
-    font-size:20px;
-    color:#cccccc;
+/* LEFT SIDE */
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    color: white;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
 }
 
 /* Sections */
