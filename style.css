@@ -162,6 +162,11 @@ img{
 .btn:hover{
     background:#9b5de5;
 }
+.car-title {
+    margin-top: 40px;      /* Adjust this value to get the exact spacing you want */
+    font-style: italic;
+    font-weight: bold;     /* Optional: Keeps it looking bold like a sub-heading */
+}
 
 /* Footer */
 footer{
