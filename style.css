@@ -99,6 +99,8 @@ color:#cccccc;
     position:relative;
     height:100vh;
     overflow:hidden;
+    padding-top: 50px;
+
 }
 .bg-video{
     width: 100%;
