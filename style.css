@@ -95,6 +95,23 @@ margin-bottom:15px;
 font-size:20px;
 color:#cccccc;
 }
+.hero-text{
+    width: 100%;
+    height: 180px;
+    background: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+}
 .hero{
     position:relative;
     height:100vh;
