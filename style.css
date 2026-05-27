@@ -1,5 +1,5 @@
 
-/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
@@ -24,7 +24,7 @@ ul {
   margin: 0;
 }
 
-/* Navigation */
+
 nav{
     background:#1e1e1e;
     padding:20px;
@@ -72,7 +72,7 @@ nav a:hover {
 .page-image:hover{
   transform: scale(1.05);
 }
-/* Hero Section */
+
 .hero{
 height:80vh;
 background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -137,12 +137,12 @@ color:#cccccc;
     text-align:center;
     top:40%;
 }
-/* Sections */
+
 section{
     padding:60px 10%;
 }
 
-/* Cards */
+
 .card{
     background:#1f1f1f;
     padding:25px;
@@ -156,7 +156,7 @@ section{
     transform:translateY(-5px);
 }
 
-/* Images */
+
 img{
     width:100%;
     border-radius:12px;
@@ -165,7 +165,7 @@ img{
 .img-container {
   overflow: hidden;
 }
-/* Buttons */
+
 .btn{
     display:inline-block;
     margin-top:20px;
@@ -186,7 +186,7 @@ img{
     font-weight: bold;     /* Optional: Keeps it looking bold like a sub-heading */
 }
 
-/* Footer */
+
 footer{
     background:#1e1e1e;
     text-align:center;
